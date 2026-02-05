@@ -1,12 +1,12 @@
 [package]
-name = "pulsess"
-version = "0.1.1"
+name = "pulses"
+version = "0.1.0"
 edition = "2024"
 description = "A robust and flexible background job processing library for Rust."
 license = "MIT"
-repository = "https://github.com/atopx/pulsess"
-homepage = "https://github.com/atopx/pulsess"
-documentation = "https://docs.rs/pulsess"
+repository = "https://github.com/atopx/pulses"
+homepage = "https://github.com/atopx/pulses"
+documentation = "https://docs.rs/pulses"
 readme = "README.md"
 keywords = ["background-jobs", "redis", "queue", "async", "task-queue"]
 categories = ["asynchronous", "concurrency", "rust-patterns"]

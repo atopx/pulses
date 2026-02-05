@@ -546,8 +546,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "pulsess"
-version = "0.1.1"
+name = "pulses"
+version = "0.1.0"
 dependencies = [
  "bytes",
  "kafka",
