@@ -100,4 +100,4 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ## License
 
-[License information here]
+[MIT](LICENSE)
