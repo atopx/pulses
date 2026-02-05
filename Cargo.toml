@@ -1,6 +1,30 @@
 [package]
-name = "pulse"
-version = "0.1.0"
+name = "pulsess"
+version = "0.1.1"
 edition = "2024"
+description = "A robust and flexible background job processing library for Rust."
+license = "MIT"
+repository = "https://github.com/atopx/pulsess"
+homepage = "https://github.com/atopx/pulsess"
+documentation = "https://docs.rs/pulsess"
+readme = "README.md"
+keywords = ["background-jobs", "redis", "queue", "async", "task-queue"]
+categories = ["asynchronous", "concurrency", "rust-patterns"]
+authors = ["atopx"]
+include = ["src/**/*", "LICENSE", "README.md", "Cargo.toml"]
 
 [dependencies]
+bytes = "1"
+smallvec = "1"
+tokio = { version = "1.49", default-features = false, features = ["rt", "sync", "time", "macros"] }
+tokio-util = "0.7"
+
+# optional
+redis = { version = "1", features = ["tokio-rustls-comp"], optional = true }
+kafka = { version = "0.10", optional = true }
+
+[dev-dependencies]
+tokio = { version = "1.49", features = ["full"] }
+
+[features]
+default = ["redis"]
