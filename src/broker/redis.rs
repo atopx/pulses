@@ -227,7 +227,9 @@ impl Broker for RedisBroker {
     }
 }
 
-fn parse_read_reply(value: Value, group: &Arc<str>, payload_key: &Bytes) -> RedisResult<Vec<(RedisMessage, RedisAckToken)>> {
+fn parse_read_reply(
+    value: Value, group: &Arc<str>, payload_key: &Bytes,
+) -> RedisResult<Vec<(RedisMessage, RedisAckToken)>> {
     let mut messages = Vec::new();
     match value {
         Value::Nil => Ok(messages),
